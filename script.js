@@ -26,7 +26,10 @@ async function fakeBoot() {
   const start = performance.now();
   const duration = 12000 + Math.random() * 6000;
 
-  while (value < 99) {
+  // La progression volontairement lente s'arrête à 98 %, puis passe à 99 %
+  // après une pause dédiée. La cible était plafonnée à 98 %, ce qui rendait
+  // auparavant la condition `value < 99` impossible à satisfaire.
+  while (value < 98) {
     const elapsed = performance.now() - start;
     const target = Math.min(98, Math.floor((elapsed / duration) * 100));
     if (target > value) {
@@ -41,12 +44,17 @@ async function fakeBoot() {
     }
     await wait(140 + Math.random() * 160);
   }
+  value = 98;
+  progress.style.width = "98%";
+  percent.textContent = "98 %";
+  progressTrack.setAttribute("aria-valuenow", "98");
+  message.textContent = "99 %… Encore un petit effort…";
+  await wait(3200);
   value = 99;
   progress.style.width = "99%";
   percent.textContent = "99 %";
   progressTrack.setAttribute("aria-valuenow", "99");
-  message.textContent = "99 %… Encore un petit effort…";
-  await wait(3200);
+  await wait(450);
   progress.style.width = "100%";
   percent.textContent = "100 %";
   progressTrack.setAttribute("aria-valuenow", "100");

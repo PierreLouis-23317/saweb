@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SAWEB, le site officiel de Sohaib. Une galerie photo qui charge très, très lentement.">
+  <title>SAWEB — Le site officiel de Sohaib</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="boot-screen" class="boot-screen" role="status" aria-live="polite">
+    <div class="boot-card">
+      <p class="eyebrow">SAWEB.BE / INITIALISATION</p>
+      <h1>Chargement de Sohaib<span class="loading-dots" aria-hidden="true"></span></h1>
+      <p id="boot-message" class="boot-message">Connexion au serveur de Sohaib…</p>
+      <div class="progress-track" role="progressbar" aria-label="Chargement du site" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="boot-progress" class="progress-bar"></div>
+      </div>
+      <div class="progress-meta"><span id="boot-percent">0 %</span><span>ne pas éteindre le modem</span></div>
+      <p class="boot-footnote">Le site est léger. Le serveur, beaucoup moins.</p>
+    </div>
+  </div>
+
+  <div id="site-shell" class="site-shell" aria-hidden="true">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#" aria-label="Retour en haut de SAWEB">
+          <span class="brand-mark">S</span>
+          <span><strong>SAWEB</strong><small>Le site officiel de Sohaib</small></span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <a href="#galerie">Galerie</a>
+          <a href="#a-propos">À propos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">ARCHIVES PHOTOGRAPHIQUES — ÉDITION 2000-QUELQUE CHOSE</p>
+          <h1 id="page-title">Les grands moments<br><em>de Sohaib.</em></h1>
+          <p class="intro">Une collection soigneusement conservée sur un serveur qui fait de son mieux depuis 2004.</p>
+        </div>
+        <aside class="server-panel" aria-label="État fictif du serveur">
+          <div class="server-heading"><span class="pulse-dot"></span> État du serveur</div>
+          <strong>CRITIQUE</strong>
+          <div class="server-meter"><span></span></div>
+          <p><span id="data-counter">847.32</span> Go de données en attente</p>
+        </aside>
+      </section>
+
+      <section id="galerie" class="gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DOSSIER #001 — PATIENCE REQUISE</p>
+            <h2 id="gallery-title">Galerie officielle</h2>
+          </div>
+          <span class="photo-count">0 photos affichées</span>
+        </div>
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+      </section>
+
+      <section id="a-propos" class="about-section">
+        <p class="eyebrow">NOTE DE L'ADMINISTRATEUR</p>
+        <p>Chaque image est chargée avec une technologie de pointe : attendre très fort devant un écran.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© SAWEB — Sohaib Archive Web</span>
+      <span>Hébergé sur un serveur qui fait de son mieux. <i class="working-icon" aria-hidden="true">⌁</i></span>
+    </footer>
+  </div>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visionneuse photo">
+    <button class="lightbox-close" type="button" aria-label="Fermer la photo">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Photo précédente">←</button>
+    <div class="lightbox-content">
+      <div id="lightbox-loader" class="lightbox-loader"><span class="spinner"></span><p>Agrandissement de l'image…</p></div>
+      <img id="lightbox-image" alt="">
+      <p id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Photo suivante">→</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

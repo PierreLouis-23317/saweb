@@ -24,7 +24,7 @@ async function fakeBoot() {
   let value = 0;
   let messageIndex = 0;
   const start = performance.now();
-  const duration = 12000 + Math.random() * 6000;
+  const duration = 47000 + Math.random() * 17000;
 
   // La progression volontairement lente s'arrête à 98 %, puis passe à 99 %
   // après une pause dédiée. La cible était plafonnée à 98 %, ce qui rendait
@@ -115,7 +115,7 @@ async function openLightbox(index) {
   image.classList.remove("is-visible");
   loader.classList.remove("is-hidden");
   caption.textContent = "";
-  await wait(1000 + Math.random() * 2000);
+  await wait(15000);
   image.src = photos[index].src;
   image.alt = photos[index].caption;
   caption.textContent = photos[index].caption;

@@ -28,8 +28,8 @@ Le projet n'utilise aucune route serveur : les chemins relatifs sont donc compat
 
 ## Modifier les temps simulés
 
-- Faux chargement initial : `duration` et le délai final dans `fakeBoot()`.
+- Faux chargement initial : `duration` et le délai final dans `fakeBoot()` (environ 50 à 70 secondes).
 - Chargement des vignettes : les valeurs `2000` et `6000` dans `renderGallery()`.
-- Chargement de la visionneuse : les valeurs `1000` et `2000` dans `openLightbox()`.
+- Chargement de la visionneuse : la valeur `15000` dans `openLightbox()` (15 secondes).
 
 Ces délais n'empêchent pas les fichiers d'être téléchargés rapidement : ils ne font qu'attendre avant de les révéler.

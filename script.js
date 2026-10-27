@@ -4,7 +4,9 @@ const photos = [
   { src: "images/sohaib-03.jpg", caption: "Document classé : très important" },
   { src: "images/sohaib-04.jpg", caption: "Le serveur témoigne de son courage" },
   { src: "images/sohaib-05.jpg", caption: "847 Go de souvenirs compressés" },
-  { src: "images/sohaib-06.jpg", caption: "Fin de transmission (enfin)" }
+  { src: "images/sohaib-06.jpg", caption: "Fin de transmission (enfin)" },
+  { src: "images/sohaib-07.jpg", caption: "Sohaib, toujours prêt pour la suite" },
+  { src: "images/sohaib-08.jpg", caption: "Dernière archive récupérée" }
 ];
 
 const bootMessages = [

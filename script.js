@@ -1,10 +1,10 @@
 const photos = [
-  { src: "images/sohaib-01.svg", caption: "Sohaib, probablement en train de réfléchir" },
-  { src: "images/sohaib-02.svg", caption: "Une journée parfaitement normale" },
-  { src: "images/sohaib-03.svg", caption: "Document classé : très important" },
-  { src: "images/sohaib-04.svg", caption: "Le serveur témoigne de son courage" },
-  { src: "images/sohaib-05.svg", caption: "847 Go de souvenirs compressés" },
-  { src: "images/sohaib-06.svg", caption: "Fin de transmission (enfin)" }
+  { src: "images/sohaib-01.jpg", caption: "Sohaib, probablement en train de réfléchir" },
+  { src: "images/sohaib-02.jpg", caption: "Une journée parfaitement normale" },
+  { src: "images/sohaib-03.jpg", caption: "Document classé : très important" },
+  { src: "images/sohaib-04.jpg", caption: "Le serveur témoigne de son courage" },
+  { src: "images/sohaib-05.jpg", caption: "847 Go de souvenirs compressés" },
+  { src: "images/sohaib-06.jpg", caption: "Fin de transmission (enfin)" }
 ];
 
 const bootMessages = [
